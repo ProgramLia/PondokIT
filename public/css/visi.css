@@ -1,0 +1,132 @@
+/* ===== Root ===== */
+:root {
+    --aa: #006330;
+    --bb: #007338;
+    --cc: #008440;
+    --dd: #009548;
+}
+
+.visi {
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 3rem 5rem;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top , rgba(0, 117, 57 , 1)20% , rgba(0,0,0,0)90%),url(../../assets/bg/09.jpg);
+}
+
+.visi h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.visi p {
+    border: 0.150rem solid #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.text-visi h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--cc);
+}
+
+.visi-content {
+    background-color: var(--bb);
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+.place-visi {
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    width: 70%;
+    border-bottom: 0.5rem solid salmon;
+    border-top: 0.5rem solid skyblue;
+    overflow: hidden;
+}
+
+.visi-desk {
+    color: var(--cc);
+}
+
+.visi-desk p {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 1em 0;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+
+.visi-desk  {
+    margin-top: 2rem;
+}
+
+.visi-desk ul {
+    padding: 1rem 2rem;
+}
+
+.visi-desk ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.visi-desk h2 {
+    margin-bottom: 1rem;
+}
+
+.visi-social {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.visi-social a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.visi-social a:first-child {
+    background-color: blue;
+}
+
+.visi-social a:nth-child(2){
+    background-color: crimson;
+}
+
+.visi-social a:nth-child(3){
+    background-color: rgb(1, 162, 1);
+}
+
+.visi-social a:nth-child(4){
+    background-color: rgb(29, 29, 73);
+}
+.visi-social a:nth-child(5){
+    background-color: red;
+}
+
+.visi-social a:last-child {
+    background-color: rgb(0, 136, 255);
+}
+
+hr {
+    margin: 1rem 0;
+    border-bottom: 0.188rem dashed var(--cc);
+}
+
+@media (max-width:800px) {
+    .place-visi {
+        width: 100%;
+    }
+}

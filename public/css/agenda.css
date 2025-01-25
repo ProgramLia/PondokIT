@@ -1,0 +1,65 @@
+/* ===== Root ===== */
+:root {
+    --aa: #006330;
+    --bb: #007338;
+    --cc: #008440;
+    --dd: #009548;
+}
+
+.main-agenda  , .main-pengumuman , .main-prestasi{
+    min-height: 100vh;
+    padding: 8rem 3rem;
+    background-color: #fff;
+}
+
+.text-agenda-m  , .text-pengumuman-m , .text-prestasi-m{
+    color: var(--cc);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.text-agenda-m h1  , .text-pengumuman-m h1 , .text-prestasi-m h1{
+    font-size: 2.5rem;
+}
+
+.place-main-agenda-social  , .place-main-pengumuman-social , .place-main-prestasi-social{
+    background-color: #fff;
+    border-top: 0.140rem solid var(--dd);
+    padding: 1rem 2rem;
+}
+
+.place-main-agenda-social ul  , .place-main-pengumuman-social ul , .place-main-prestasi-social ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.place-main-agenda-social ul li a , .place-main-pengumuman-social ul li a , .place-main-prestasi-social ul li a{
+    color: #fff;
+}
+
+.place-main-agenda-social ul li  , .place-main-pengumuman-social ul li , .place-main-prestasi-social ul li{
+    padding: 0.5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+
+.place-agenda-m  , .place-pengumuman-m , .place-prestasi-m{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+@media (max-width:600px) {
+    .main-agenda , .main-pengumuman  , .main-prestasi{
+        padding: 4rem 1rem;
+    }
+}

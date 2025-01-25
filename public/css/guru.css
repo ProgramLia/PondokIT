@@ -1,0 +1,188 @@
+/* ===== Root ===== */
+:root {
+    --aa: #006330;
+    --bb: #007338;
+    --cc: #008440;
+    --dd: #009548;
+}
+
+/* ===== guru ====== */
+.guru {
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    color: var(--aa);
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top , rgba(255 , 255 , 255, 1)20% , rgba(0,0,0,0)90%),url(../../assets/bg/10.jpg);
+}
+
+.guru h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.guru p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.guru-social {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.guru-social a {
+    background-color: var(--cc);
+    color: #fff;
+    width: 3rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.table-guru {
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+}
+
+.item-table {
+    width: 70%;
+    overflow: auto;
+    border-radius: 0.5rem;
+    border: 0.150rem solid var(--cc);
+}
+
+.item-table h1{
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: var(--cc);
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.item-table table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.item-table  table td {
+    border-bottom: 0.140rem solid var(--cc);
+    padding: 1rem;
+}
+
+
+.item-table  table th {
+    padding-bottom: 1rem;
+    border-bottom: 0.140rem solid var(--cc);
+}
+
+.item-table table td button {
+    background-color: rgb(0, 81, 255);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.modal-guru {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 9999999999;
+}
+
+.modal-guru.active {
+    display: flex;
+}
+
+.place-modal-guru {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    animation: showX 0.5s forwards;
+    box-shadow: 0.188rem 0.188rem 0.3rem rgba(0,0,0,0.4);
+}
+
+@keyframes showX {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+
+.place-modal-guru h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--cc);
+}
+
+.modal-guru ul {
+    border: 0.140rem solid var(--cc);
+    list-style-type: none;
+    color: var(--cc);
+}
+
+.modal-guru ul li:last-child {
+    border-bottom: none;
+}
+
+.modal-guru ul li {
+    border-bottom: 0.149rem solid var(--cc);
+    padding: 1rem;
+}
+
+@media (max-width:800px) {
+    .table-guru  , .guru{
+        padding: 1rem;
+    }
+
+    .item-table {
+        width: 90%;
+    }
+}
+
+@media (max-width:400px) {
+    .item-table {
+        width: 100%;
+        font-size: 80%;
+    }
+
+    .place-modal-guru {
+        border-radius: 0;
+        padding: 1rem;
+    }
+
+    .item-table table td button {
+        font-size: 80%;
+    }
+}
